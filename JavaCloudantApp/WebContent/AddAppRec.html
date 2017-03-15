@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYL Application Management System</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="detailStyle.css" />
+</head>
+<body>
+	<div class = "detailcontainer">
+	<div class = "detailbanner">
+		<!-- <img class="newappIcon" src="images/newapp-icon.png"> -->
+		<!--  <p class = "appdetail">
+			Welcome to
+		</p>-->
+		<p class = "appdetail1">
+			NYL Application Management System
+		</p>
+	</div>
+        <p style='text-align:center;' > <b> Please enter Application Status details below</b> </p>
+       
+		<div>
+			<form name='detailform' >
+			<div class="addrec">
+    		<label for="dummy1"> Application Name:**</label>
+    		<input type="text" placeholder="Enter Application Name" name="appname" id="appid"required><br>
+			<br><br>
+			<label for="dummy2"> Analyst Name:</label>	
+    		<input type="text" placeholder="Enter Analyst Name" name="anstname" id="anstid"required><br>
+    		<br><br>
+    		<label for="dummy3"> Batch Cycle Date:**</label>
+    		<input type="text" placeholder="Enter batch cycle date" name="batdate" id="batid"required><br>
+			<br><br>
+			<label for="dummy4"> Appl.Cycle Completion Date:</label>
+			<input type="text" placeholder="Enter completion date" name="compdate" id="compdid"required><br>
+			<br><br>
+			<label for="dummy5"> Appl.Cycle Completion Time:</label>
+			<input type="text" placeholder="Enter completion date" name="comptime" id="comptid"required><br>
+			<br><br>
+			<label for="dummy6"> Application Status:</label>
+			<input type="text" placeholder="Enter Application Staus" name="appstatus" id="appstid"required><br>
+			<br><br>
+			<label for="dummy6"> Problem/Issues:</label>
+			<input type="text" placeholder="Enter Application Staus" name="prob" id="probid"required><br>
+    	 	<br><br>
+    	 	<br>
+    	 	<button type="button" onclick='add()'>Add</button>
+    	 	<button type="button" onclick='update()'>Update</button>
+    	 	<button type="button" onclick='Delete()'>Delete</button>
+    	 	<button type="button" onclick='Appprevious()'>Return</button>
+    	 	</div>
+    	 	<br>
+    	 	 			  			
+  			<div id="errorDiv" class='errorMsg'></div>
+			</form>
+		</div>
+		
+  	<script type="text/javascript" src="index.js"></script>	
+	 <script type="text/javascript" src="util.js"></script> 
+	 
+	<br><br><br>
+	</div>
+</body>
+</html>

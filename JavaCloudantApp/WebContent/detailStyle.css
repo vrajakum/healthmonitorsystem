@@ -1,0 +1,288 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+body,html {
+	background-color: #f5f7fa;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: Lato,sans-serif;
+	color: #283D56;
+}
+
+/* header footer common */
+header{
+	width: 100%;
+	text-align: center;
+}
+
+/*.container {
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner {
+	background: #5586D6;
+	color: #fff;
+	padding: 10px;
+}*/
+.detailcontainer {
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.detailbanner {
+	background: #5586D6;
+	color: #fff;
+	padding: 10px;
+}
+
+/* positions */
+/*header {
+	padding-top: 20px;
+	font-size: 1.3em;
+}
+footer {
+	padding: 10px;
+	font-size: .8rem;
+}
+.title, .tips {
+	height: 30px;
+	padding-top: 20px;
+	position: relative;
+}
+.title {
+	border-radius: 40px 40px 0 0;
+}
+.tips {
+	border-radius: 0 0 40px 40px;
+}
+
+table {
+	table-layout: fixed;
+	word-wrap: break-word;
+	position: relative;
+	border-collapse: collapse;
+	width: 100%;
+}
+.content {
+	font-size: .8rem;
+	width: 30%;
+	vertical-align: top;
+}
+.contentName {
+	padding: 10px;
+	padding-left: 20px;
+	width: 25%;
+	font-weight:bold;
+	vertical-align: top;
+}
+.contentDetails {
+	padding: 10px;
+}
+.contentAction {
+	width: 10%;
+	padding-right: 20px;
+	text-align: right;
+}
+
+.nameText {
+	font-weight: bold;
+}
+.records textarea {
+	height: 1.2em;
+	font-size: 1em;
+	resize: none;
+	width: 100%;
+	border: none;
+	overflow: hidden;
+	background-color: transparent;
+	font-size: .9em;
+}
+*/
+/* buttons */
+/*.detailBtn {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.addBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.detailBtn img{
+	width: 20px;
+	height: 20px;
+}
+.deleteBtn{
+  background-image: url("images/sprite.png");
+  background-position: -5px -568px;
+  width: 18px;
+  height: 18px;
+    display:inline-block;
+}
+
+tr:hover .deleteBtn {
+
+	cursor: pointer;
+}
+
+
+.tableRows{
+	border: 2px solid #DFE3E6
+}
+
+
+
+.fieldname {
+	text-align: right;
+	border-right: 1px solid #fff;
+}
+	
+.newappIcon {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 auto;
+	padding: 10px;
+}
+.appTitle {
+	padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+	font-size: 1.5rem;
+}
+.appTitle1 {
+	padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+*/
+.errorMsg {
+	color: red;
+	font-weight:normal;
+	text-align: center;
+}
+
+
+
+.appdetail {
+	padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+	font-size: 1.0rem;
+}
+.appdetail1 {
+	padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.0rem;
+}
+.appdetail2 {
+	padding: 10px;
+  margin-left: 300px;
+  font-size: 1.0rem;
+}
+.addrec {
+	padding: 10px;
+  margin-left: 100px;
+  font-size: 1.0rem;
+}
+.description {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.radiomiddle input{
+    text-align: center;
+    display:inline;
+}
+
+/*
+.infoImg {
+	cursor: pointer;
+}
+.flexBox {
+	display: flex;
+	flex-wrap: wrap;
+}
+.contentTiles {
+		padding: 10px;
+		font-size: .8rem;
+}
+.uploadBox {
+  margin: 0 auto;
+  text-align: center;
+}
+.appinfo {
+	padding: 10px;
+}*/
+
+
+/* Bordered form */
+label {
+    width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+input, label {
+    float:left;
+}
+mainform {
+    border: 1px solid #f1f1f1;
+    text-align: center;
+}
+
+/* Full-width inputs */
+ input[type=text], input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin-left: 100px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    }
+
+/* Add padding to containers */
+.container {
+    padding: 8px;
+}
+
+/* The "Forgot password" text */
+ span.psw {
+    float: right;
+    padding-top: 8px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+ @media screen and (max-width: 100px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+ }
+
+

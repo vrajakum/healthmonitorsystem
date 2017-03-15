@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYL Application Management System</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="style.css" />
+	
+	<style>table ,th,td {border: 1px solid black;}</style>
+	<style>detailcontainer {
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}</style>
+</head>
+<body>
+	<div class = "container">
+	<div class = "banner">
+		<p class = "appTitle1">
+			NYL Application Management System
+		</p>
+	</div>
+	<br><br><br>
+	<p align="center" ><b>Please fill below cycle date field to view all Application Health Check status </b> </p>
+	<br><br>
+      	<div>
+		<form name='healthform1' >
+			Batch Cycle Date:<input type="text" placeholder="Enter batch cycle date" name="hltbatdate" id="hltbatid">
+		    <button type="button" onclick='addalltable()'>View Report</button>
+		    <br><br>
+		    <div id="errorDiv" class='errorMsg'></div><br>
+		    <br><br>
+		</form>
+		<table  style="width:60%" align="center" id='notesh'>
+		<caption style="color:Magenta"> <b> Health Check Status of All Application </b></caption>
+		<tr>
+		<th>Application Name</th>
+		<th>Completion Status</th>
+		</tr>
+		</table>
+		<div id="myDynamicTable" align="center" style="width:100%"></div>
+		</div>
+		<br><br><br><br>
+		<div class="dailybutton">
+		<button type="button" onclick='Dailyprevious()'>Return</button>
+    	<button type="button" onclick='home()'>Logout</button>
+		</div>
+	 <script type="text/javascript" src="util.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
+	<br><br><br>
+	</div>
+</body>
+</html>

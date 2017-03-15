@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYL Application Management System</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="detailStyle.css" />
+</head>
+<body>
+	<div class = "detailcontainer">
+	<div class = "detailbanner">
+		<!-- <img class="newappIcon" src="images/newapp-icon.png"> -->
+		<!--  <p class = "appdetail">
+			Welcome to
+		</p>-->
+		<p class = "appdetail1">
+			NYL Application Management System
+		</p>
+	</div>
+        <p style='text-align:center;' > <b> Please choose one from below category</b></p>
+       <br><br>
+		<div>
+			<form>
+			<div class="appdetail2" >
+			<input type="radio" id="daily" name="check" value="daily" >Daily Health Check Report<br>
+			<br>
+    		<input type="radio" id="addupt" name="addupt" value="addupt" >Add new record/Update/Delete existing record<br>
+    		<br>
+    		<input type="radio" id="historical" name="historical" value="historical" >Historical Health Check Report<br>
+    		 <br><br>	 	
+    	 	<button type="button" onclick='select()'>Submit</button>
+    	 	<button type="button" onclick='previous()'>Return</button>
+    	 	<button type="button" onclick='home()'>Logout</button>
+    	 	 </div>   	 	 			
+  			<div id="errorDiv" class='errorMsg'></div>
+			</form>
+		</div>
+		
+  	<script type="text/javascript" src="index.js"></script>	
+	 <script type="text/javascript" src="util.js"></script> 
+	 
+	<br><br><br>
+	</div>
+</body>
+</html>

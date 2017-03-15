@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYL Application Management System</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class = "container">
+	<div class = "banner">
+		<img class="newappIcon" src="images/newapp-icon.png">
+		<p class = "appTitle">
+			Welcome to
+		</p>
+		<p class = "appTitle1">
+			NYL Application Management System
+		</p>
+	</div>
+        <p style='text-align:center;' > <b> Enter your credentials below</b> </p>
+       
+		<div>
+			<form name='loginform' >
+			<div class="container">
+    		<label><b>Username</b> </label><br>
+    		<input type="text" placeholder="Enter Username" name="username" id="userid" required><br>
+
+    		<label><b>Password</b></label><br>
+    		<input type="password" placeholder="Enter Password" name="password" id="paswrd"required><br>
+			</div>
+			<div class="loginbutton">
+    	 	<button type="button" onclick='login()'>login</button>
+    	 	<button type="button" onclick='newuser()'>New User</button>
+    	 	</div>
+    		<div id="errorDiv" class='errorMsg'></div>
+			</form>
+		</div>	
+		
+	 <script type="text/javascript" src="util.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
+	<br><br><br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NYL Application Management System</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="style.css" />
+	
+	<style>table ,th,td {border: 1px solid black;}</style>
+	<style>detailcontainer {
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}</style>
+</head>
+<body>
+	<div class = "container">
+	<div class = "banner">
+		<p class = "appTitle1">
+			NYL Application Management System
+		</p>
+	</div>
+		<br><br><br>
+        <p align="center" > <b>Please fill below Application and cycle date fields to view Health Check status </b> </p>
+      	<div>
+		<form name='healthform' >
+			Application Name:<input type="text" placeholder="Enter Application Name" name="hltappname" id="hltappid"><br>
+		    Batch Cycle Date:<input type="text" placeholder="Enter batch cycle date" name="hltbatdate" id="hlpbatid"><br>
+		    <br>
+		    <button type="button" onclick='addtable()'>View Report</button>
+		    <div id="errorDiv1" class='errorMsg'></div><br>
+		</form>
+		<br><br>
+		<section>
+		<table style="width:100%" id='notes'>
+		<caption style="color:Magenta"> <b> Health Check Status of Requested Application </b></caption>
+		<tr>
+		<th>Application Name</th>
+		<th>Analyst Name</th>
+		<th>Completion Date</th>
+		<th>Completion Time</th>
+		<th>Completion status</th>
+		<th>Problem/Issues</th>
+		</tr>
+		</table>	
+	    </section>
+		</div>	
+		<br><br><br>
+		<div class="dailybutton">
+		<button type="button" onclick='Dailyprevious()'>Return</button>
+    	<button type="button" onclick='home()'>Logout</button>
+		</div>
+	 <script type="text/javascript" src="util.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
+	<br><br><br>
+	</div>
+</body>
+</html>
